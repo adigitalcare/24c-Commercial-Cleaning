@@ -1426,6 +1426,184 @@ textarea{
 
 }
 
+
+/* =========================================================
+   UPDATED HERO — FULL-WIDTH BACKGROUND IMAGE
+   Replace the image URL below with the uploaded hero image.
+========================================================= */
+
+.hero{
+    position:relative;
+    min-height:680px;
+    overflow:hidden;
+    isolation:isolate;
+    background-image:url("images/bg.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:
+        linear-gradient(90deg,
+            rgba(247,251,253,.97) 0%,
+            rgba(247,251,253,.92) 30%,
+            rgba(247,251,253,.70) 47%,
+            rgba(247,251,253,.20) 67%,
+            rgba(247,251,253,.02) 100%
+        );
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(8,38,56,.04));
+    pointer-events:none;
+}
+
+.hero-inner{
+    position:relative;
+    z-index:2;
+    min-height:680px;
+    display:flex;
+    align-items:center;
+    padding:65px 0 55px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:3;
+    width:min(650px,62%);
+}
+
+.hero h1{
+    max-width:650px;
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(48px,5.6vw,78px);
+    line-height:.98;
+    letter-spacing:-4px;
+    text-shadow:0 1px 1px rgba(255,255,255,.35);
+}
+
+.hero-text{
+    max-width:590px;
+    color:#405966;
+    font-size:16px;
+    line-height:1.65;
+    margin-top:22px;
+}
+
+.location-pill{
+    background:rgba(255,255,255,.88);
+    border-color:rgba(223,232,236,.95);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+}
+
+.hero-proof{
+    border-top-color:rgba(16,52,77,.16);
+}
+
+.hero-visual{
+    display:none !important;
+}
+
+@media(max-width:1050px){
+    .hero{
+        min-height:650px;
+        background-position:58% center;
+    }
+
+    .hero-inner{
+        min-height:650px;
+    }
+
+    .hero-content{
+        width:min(650px,68%);
+    }
+}
+
+@media(max-width:850px){
+    .hero{
+        min-height:650px;
+        background-position:62% center;
+    }
+
+    .hero::before{
+        background:
+            linear-gradient(90deg,
+                rgba(247,251,253,.96) 0%,
+                rgba(247,251,253,.88) 48%,
+                rgba(247,251,253,.42) 78%,
+                rgba(247,251,253,.12) 100%
+            );
+    }
+
+    .hero-inner{
+        min-height:650px;
+        padding:55px 0 50px;
+    }
+
+    .hero-content{
+        width:min(700px,78%);
+    }
+}
+
+@media(max-width:600px){
+    .hero{
+        min-height:680px;
+        background-position:65% center;
+    }
+
+    .hero::before{
+        background:
+            linear-gradient(180deg,
+                rgba(247,251,253,.94) 0%,
+                rgba(247,251,253,.88) 45%,
+                rgba(247,251,253,.56) 72%,
+                rgba(247,251,253,.25) 100%
+            );
+    }
+
+    .hero-inner{
+        min-height:680px;
+        padding:48px 0 45px;
+        align-items:flex-start;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:44px;
+        letter-spacing:-2.5px;
+        line-height:1;
+    }
+
+    .hero-text{
+        font-size:14px;
+        line-height:1.65;
+        max-width:580px;
+    }
+
+    .hero-actions{
+        margin-top:22px;
+    }
+
+    .hero-proof{
+        margin-top:22px;
+        padding-top:16px;
+    }
+}
+
 </style>
 </head>
 

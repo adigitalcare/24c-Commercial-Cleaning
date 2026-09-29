@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>24C Commercial Cleaning | Braintree & Greater Boston</title>
+
+<meta name="description" content="24C Commercial Cleaning provides professional office, commercial and post-construction cleaning services throughout Braintree and Greater Boston.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --navy:#10344d;
+    --navy-deep:#082638;
+    --blue:#3c92c8;
+    --green:#6fbd55;
+    --green-dark:#4d9b39;
+
+    --bg:#f5f9fa;
+    --soft-blue:#edf7fb;
+    --soft-green:#eff8ed;
+
+    --white:#ffffff;
+    --text:#263d4b;
+    --muted:#71828d;
+    --border:#dfe8ec;
+
+    --radius:20px;
+    --shadow:0 18px 50px rgba(15,48,70,.10);
+
+    --container:1280px;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:"DM Sans",sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+textarea{
+    font:inherit;
+}
+
+.container{
+    width:min(var(--container),92%);
+    margin-inline:auto;
+}
+
+.section{
+    padding:72px 0;
+}
+
+.section-sm{
+    padding:55px 0;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    color:var(--green-dark);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+
+.eyebrow::before{
+    content:"";
+    width:25px;
+    height:2px;
+    background:var(--green);
+}
+
+.section-title{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,54px);
+    line-height:1.06;
+    letter-spacing:-2px;
+}
+
+.section-description{
+    max-width:620px;
+    color:var(--muted);
+    font-size:15px;
+    margin-top:15px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+    width:100%;
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    position:relative;
+    z-index:999;
+}
+
+.header-inner{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.logo-symbol{
+    width:44px;
+    height:44px;
+    display:grid;
+    place-items:center;
+    background:var(--green);
+    color:#fff;
+    border-radius:11px;
+    font-family:"Manrope",sans-serif;
+    font-weight:800;
+    font-size:17px;
+}
+
+.logo-name{
+    line-height:1.1;
+}
+
+.logo-name strong{
+    display:block;
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:16px;
+    font-weight:800;
+}
+
+.logo-name span{
+    display:block;
+    color:#82929c;
+    font-size:9px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-top:4px;
+}
+
+.main-nav{
+    display:flex;
+    align-items:center;
+    gap:29px;
+}
+
+.main-nav a{
+    color:#526774;
+    font-size:13px;
+    font-weight:600;
+    transition:.25s ease;
+}
+
+.main-nav a:hover{
+    color:var(--green-dark);
+}
+
+.nav-cta{
+    padding:11px 18px;
+    background:var(--navy);
+    color:#fff !important;
+    border-radius:8px;
+}
+
+.nav-cta:hover{
+    background:var(--green-dark);
+}
+
+.menu-toggle{
+    display:none;
+    width:42px;
+    height:42px;
+    border:1px solid var(--border);
+    border-radius:9px;
+    background:#fff;
+    cursor:pointer;
+    color:var(--navy);
+    font-size:20px;
+}
+
+/* =========================================================
+   NEW HERO
+========================================================= */
+
+.hero{
+    background:
+        radial-gradient(circle at 85% 10%,rgba(111,189,85,.12),transparent 30%),
+        linear-gradient(135deg,#f5fafc 0%,#edf7fa 100%);
+    overflow:hidden;
+}
+
+.hero-inner{
+    min-height:650px;
+    display:grid;
+    grid-template-columns:.91fr 1.09fr;
+    align-items:center;
+    gap:55px;
+    padding:45px 0 50px;
+}
+
+/* Hero content */
+
+.hero-content{
+    position:relative;
+    z-index:3;
+}
+
+.location-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#fff;
+    border:1px solid var(--border);
+    padding:7px 12px;
+    border-radius:100px;
+    color:#55707d;
+    font-size:11px;
+    font-weight:700;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(18,52,77,.05);
+}
+
+.location-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 0 4px rgba(111,189,85,.12);
+}
+
+.hero h1{
+    max-width:650px;
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(46px,5.5vw,76px);
+    line-height:.98;
+    letter-spacing:-4px;
+}
+
+.hero h1 em{
+    color:var(--green-dark);
+    font-style:normal;
+}
+
+.hero-text{
+    max-width:570px;
+    color:var(--muted);
+    font-size:16px;
+    margin-top:22px;
+}
+
+.hero-actions{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    flex-wrap:wrap;
+    margin-top:27px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:13px 20px;
+    border-radius:9px;
+    font-size:13px;
+    font-weight:800;
+    transition:.25s ease;
+}
+
+.btn-primary{
+    background:var(--green);
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:var(--green-dark);
+    transform:translateY(-2px);
+}
+
+.btn-dark{
+    background:var(--navy);
+    color:#fff;
+}
+
+.btn-dark:hover{
+    background:var(--navy-deep);
+    transform:translateY(-2px);
+}
+
+.btn-light{
+    background:#fff;
+    color:var(--navy);
+    border:1px solid var(--border);
+}
+
+.btn-light:hover{
+    border-color:var(--blue);
+}
+
+.hero-proof{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:29px;
+    padding-top:20px;
+    border-top:1px solid #d7e5ea;
+}
+
+.proof-item{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    color:#5f727e;
+    font-size:11px;
+    font-weight:700;
+}
+
+.proof-icon{
+    width:19px;
+    height:19px;
+    display:grid;
+    place-items:center;
+    background:var(--soft-green);
+    color:var(--green-dark);
+    border-radius:50%;
+    font-size:10px;
+}
+
+/* Hero visual */
+
+.hero-visual{
+    min-width:0;
+    position:relative;
+}
+
+.hero-image-frame{
+    position:relative;
+    height:555px;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 25px 70px rgba(16,52,77,.16);
+}
+
+.hero-image-frame::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(8,38,56,0) 45%,
+        rgba(8,38,56,.35)
+    );
+}
+
+.hero-image-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-floating{
+    position:absolute;
+    z-index:5;
+    background:#fff;
+    box-shadow:0 18px 45px rgba(15,48,70,.18);
+    border-radius:15px;
+}
+
+.hero-floating.top{
+    top:25px;
+    right:-20px;
+    padding:15px 18px;
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.hero-floating.bottom{
+    left:-25px;
+    bottom:28px;
+    width:245px;
+    padding:19px;
+}
+
+.float-icon{
+    width:37px;
+    height:37px;
+    background:var(--soft-green);
+    color:var(--green-dark);
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    font-weight:800;
+}
+
+.float-title{
+    color:var(--navy);
+    font-size:12px;
+    font-weight:800;
+}
+
+.float-sub{
+    color:#82919a;
+    font-size:10px;
+    margin-top:2px;
+}
+
+.hero-floating.bottom strong{
+    display:block;
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:19px;
+    line-height:1.2;
+}
+
+.hero-floating.bottom span{
+    display:block;
+    color:var(--muted);
+    font-size:11px;
+    margin-top:5px;
+}
+
+/* =========================================================
+   TRUST BAR
+========================================================= */
+
+.trust-bar{
+    background:var(--navy);
+    color:#fff;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.trust-box{
+    min-height:92px;
+    display:flex;
+    align-items:center;
+    gap:13px;
+    padding:15px 25px;
+    border-right:1px solid rgba(255,255,255,.12);
+}
+
+.trust-box:last-child{
+    border-right:0;
+}
+
+.trust-number{
+    color:#82cb68;
+    font-family:"Manrope",sans-serif;
+    font-size:25px;
+    font-weight:800;
+}
+
+.trust-box strong{
+    display:block;
+    font-size:12px;
+}
+
+.trust-box span{
+    display:block;
+    color:#9fb4c0;
+    font-size:10px;
+    margin-top:2px;
+}
+
+/* =========================================================
+   ABOUT / VALUE
+========================================================= */
+
+.value-section{
+    padding:68px 0 60px;
+}
+
+.value-header{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:60px;
+    margin-bottom:38px;
+}
+
+.value-header-right{
+    color:var(--muted);
+    font-size:15px;
+    max-width:650px;
+}
+
+.value-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+
+.value-card{
+    padding:27px 22px;
+    border-right:1px solid var(--border);
+}
+
+.value-card:last-child{
+    border-right:0;
+}
+
+.value-number{
+    color:#a8bac3;
+    font-family:"Manrope",sans-serif;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.value-card h3{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:17px;
+    margin-bottom:7px;
+}
+
+.value-card p{
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.65;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-section{
+    background:#f7fafb;
+    padding:70px 0;
+}
+
+.section-heading-row{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:30px;
+    margin-bottom:35px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.service-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.service-image{
+    height:215px;
+    overflow:hidden;
+}
+
+.service-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s ease;
+}
+
+.service-card:hover .service-image img{
+    transform:scale(1.05);
+}
+
+.service-body{
+    padding:22px;
+}
+
+.service-meta{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    color:var(--green-dark);
+    font-size:10px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:9px;
+}
+
+.service-body h3{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:21px;
+    margin-bottom:8px;
+}
+
+.service-body p{
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.7;
+}
+
+.service-link{
+    display:inline-flex;
+    margin-top:17px;
+    color:var(--navy);
+    font-size:12px;
+    font-weight:800;
+}
+
+/* =========================================================
+   FEATURE SPLIT
+========================================================= */
+
+.feature-section{
+    padding:72px 0;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.feature-image{
+    height:510px;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+}
+
+.feature-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.feature-badge{
+    position:absolute;
+    left:22px;
+    bottom:22px;
+    background:#fff;
+    border-radius:13px;
+    padding:16px 18px;
+    box-shadow:0 15px 35px rgba(15,48,70,.15);
+}
+
+.feature-badge strong{
+    color:var(--navy);
+    display:block;
+    font-family:"Manrope",sans-serif;
+    font-size:16px;
+}
+
+.feature-badge span{
+    color:var(--muted);
+    font-size:10px;
+}
+
+.feature-content h2{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,51px);
+    line-height:1.08;
+    letter-spacing:-1.8px;
+}
+
+.feature-content > p{
+    color:var(--muted);
+    font-size:14px;
+    margin:15px 0 24px;
+}
+
+.check-list{
+    display:grid;
+    gap:11px;
+    margin-bottom:27px;
+}
+
+.check-row{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    color:#405966;
+    font-size:13px;
+    font-weight:600;
+}
+
+.check-row i{
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:var(--soft-green);
+    color:var(--green-dark);
+    display:grid;
+    place-items:center;
+    font-size:10px;
+    font-style:normal;
+}
+
+/* =========================================================
+   INDUSTRIES
+========================================================= */
+
+.industries-section{
+    background:var(--soft-blue);
+    padding:70px 0;
+}
+
+.industry-grid{
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    gap:55px;
+    align-items:center;
+}
+
+.industry-image{
+    height:500px;
+    border-radius:24px;
+    overflow:hidden;
+}
+
+.industry-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.industry-content h2{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,50px);
+    line-height:1.08;
+    letter-spacing:-1.8px;
+}
+
+.industry-content > p{
+    color:var(--muted);
+    font-size:14px;
+    margin:15px 0 25px;
+}
+
+.industry-grid-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.industry-item{
+    background:#fff;
+    border:1px solid #dbe7ec;
+    padding:16px;
+    border-radius:12px;
+}
+
+.industry-item strong{
+    color:var(--navy);
+    font-size:13px;
+    display:block;
+}
+
+.industry-item span{
+    color:var(--muted);
+    font-size:10px;
+    display:block;
+    margin-top:3px;
+}
+
+/* =========================================================
+   CLEANING STANDARDS
+========================================================= */
+
+.standards-section{
+    padding:70px 0;
+}
+
+.standards-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.standards-content h2{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,50px);
+    line-height:1.07;
+    letter-spacing:-1.8px;
+}
+
+.standards-content p{
+    color:var(--muted);
+    font-size:14px;
+    margin-top:14px;
+}
+
+.standard-list{
+    display:grid;
+    gap:0;
+    border-top:1px solid var(--border);
+}
+
+.standard-row{
+    display:grid;
+    grid-template-columns:45px 1fr;
+    gap:12px;
+    padding:18px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.standard-row b{
+    color:var(--green-dark);
+    font-family:"Manrope",sans-serif;
+    font-size:12px;
+}
+
+.standard-row h4{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:14px;
+}
+
+.standard-row p{
+    margin:3px 0 0;
+    color:var(--muted);
+    font-size:11px;
+}
+
+.standards-image{
+    height:470px;
+    border-radius:24px;
+    overflow:hidden;
+}
+
+.standards-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process-section{
+    background:#f7fafb;
+    padding:70px 0;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:35px;
+}
+
+.process-card{
+    position:relative;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:25px;
+}
+
+.process-card::after{
+    content:"→";
+    position:absolute;
+    top:25px;
+    right:25px;
+    color:#c2d1d8;
+    font-size:20px;
+}
+
+.process-card:last-child::after{
+    display:none;
+}
+
+.process-number{
+    color:var(--green);
+    font-family:"Manrope",sans-serif;
+    font-size:31px;
+    font-weight:800;
+}
+
+.process-card h3{
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:18px;
+    margin-top:18px;
+}
+
+.process-card p{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:6px;
+}
+
+/* =========================================================
+   SERVICE AREA
+========================================================= */
+
+.area-section{
+    padding:68px 0;
+}
+
+.area-box{
+    background:var(--navy);
+    color:#fff;
+    border-radius:25px;
+    padding:48px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.area-box h2{
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,48px);
+    line-height:1.08;
+    letter-spacing:-1.5px;
+}
+
+.area-box p{
+    color:#b4c6d0;
+    font-size:13px;
+    margin-top:12px;
+}
+
+.area-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.area-item{
+    padding:14px 15px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.09);
+    border-radius:10px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.area-item span{
+    color:#80c968;
+    margin-right:7px;
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq-section{
+    padding:70px 0;
+    background:#f7fafb;
+}
+
+.faq-layout{
+    display:grid;
+    grid-template-columns:.7fr 1.3fr;
+    gap:70px;
+}
+
+.faq-list{
+    border-top:1px solid var(--border);
+}
+
+.faq{
+    border-bottom:1px solid var(--border);
+}
+
+.faq summary{
+    cursor:pointer;
+    list-style:none;
+    padding:18px 0;
+    color:var(--navy);
+    font-family:"Manrope",sans-serif;
+    font-size:14px;
+    font-weight:700;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.faq summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq summary::after{
+    content:"+";
+    color:var(--green-dark);
+    font-size:20px;
+    font-weight:400;
+}
+
+.faq[open] summary::after{
+    content:"−";
+}
+
+.faq p{
+    color:var(--muted);
+    font-size:12px;
+    padding:0 30px 18px 0;
+}
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.final-cta{
+    padding:68px 0;
+}
+
+.cta-box{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            105deg,
+            rgba(8,38,56,.96),
+            rgba(16,52,77,.88)
+        ),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+    border-radius:27px;
+    padding:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.cta-box h2{
+    color:#fff;
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,52px);
+    line-height:1.05;
+    letter-spacing:-1.8px;
+    max-width:680px;
+}
+
+.cta-box p{
+    color:#b5c7d1;
+    font-size:13px;
+    max-width:580px;
+    margin-top:11px;
+}
+
+.cta-actions{
+    flex-shrink:0;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+    background:#071f30;
+    color:#fff;
+    padding:55px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-brand h3{
+    font-family:"Manrope",sans-serif;
+    font-size:19px;
+}
+
+.footer-brand p{
+    color:#90a6b2;
+    font-size:12px;
+    max-width:320px;
+    margin-top:10px;
+}
+
+.footer-column h4{
+    font-family:"Manrope",sans-serif;
+    font-size:13px;
+    margin-bottom:13px;
+}
+
+.footer-column a{
+    display:block;
+    color:#90a6b2;
+    font-size:11px;
+    margin-bottom:8px;
+}
+
+.footer-column a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.09);
+    margin-top:40px;
+    padding-top:18px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#708894;
+    font-size:10px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1050px){
+
+    .main-nav{
+        gap:17px;
+    }
+
+    .hero-inner{
+        gap:35px;
+    }
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .value-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .value-card:nth-child(2){
+        border-right:0;
+    }
+
+    .value-card:nth-child(-n+2){
+        border-bottom:1px solid var(--border);
+    }
+
+    .hero-floating.top{
+        right:15px;
+    }
+
+    .hero-floating.bottom{
+        left:15px;
+    }
+
+}
+
+@media(max-width:850px){
+
+    .main-nav{
+        display:none;
+        position:absolute;
+        top:82px;
+        left:0;
+        right:0;
+        background:#fff;
+        border-bottom:1px solid var(--border);
+        padding:15px 4%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:2px;
+        box-shadow:0 15px 30px rgba(15,48,70,.08);
+    }
+
+    .main-nav.active{
+        display:flex;
+    }
+
+    .main-nav a{
+        padding:10px;
+    }
+
+    .nav-cta{
+        text-align:center;
+        margin-top:5px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .hero-inner{
+        grid-template-columns:1fr;
+        padding:50px 0 45px;
+    }
+
+    .hero-content{
+        max-width:720px;
+    }
+
+    .hero-image-frame{
+        height:480px;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-box:nth-child(2){
+        border-right:0;
+    }
+
+    .trust-box:nth-child(-n+2){
+        border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .value-header{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid,
+    .industry-grid,
+    .standards-layout,
+    .faq-layout{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-card::after{
+        display:none;
+    }
+
+    .area-box{
+        grid-template-columns:1fr;
+        gap:30px;
+        padding:40px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .cta-box{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:45px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .section,
+    .section-sm,
+    .value-section,
+    .feature-section,
+    .standards-section,
+    .area-section,
+    .faq-section,
+    .final-cta{
+        padding-top:52px;
+        padding-bottom:52px;
+    }
+
+    .header-inner{
+        min-height:74px;
+    }
+
+    .hero h1{
+        font-size:44px;
+        letter-spacing:-2.5px;
+    }
+
+    .hero-text{
+        font-size:14px;
+    }
+
+    .hero-proof{
+        gap:10px;
+        flex-direction:column;
+    }
+
+    .hero-image-frame{
+        height:400px;
+        border-radius:20px;
+    }
+
+    .hero-floating.top{
+        top:15px;
+        right:12px;
+    }
+
+    .hero-floating.bottom{
+        left:12px;
+        bottom:15px;
+        width:220px;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-box{
+        padding:14px;
+    }
+
+    .value-grid{
+        grid-template-columns:1fr;
+    }
+
+    .value-card{
+        border-right:0;
+        border-bottom:1px solid var(--border);
+    }
+
+    .value-card:last-child{
+        border-bottom:0;
+    }
+
+    .section-heading-row{
+        display:block;
+    }
+
+    .section-heading-row .section-description{
+        margin-top:15px;
+    }
+
+    .service-image{
+        height:205px;
+    }
+
+    .feature-image,
+    .industry-image,
+    .standards-image{
+        height:350px;
+    }
+
+    .industry-grid-list{
+        grid-template-columns:1fr;
+    }
+
+    .area-box{
+        padding:32px 25px;
+        border-radius:20px;
+    }
+
+    .area-list{
+        grid-template-columns:1fr;
+    }
+
+    .cta-box{
+        padding:35px 25px;
+        border-radius:20px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+<div class="container header-inner">
+
+<a href="#" class="logo">
+
+<div class="logo-symbol">
+24C
+</div>
+
+<div class="logo-name">
+<strong>Commercial Cleaning</strong>
+<span>Braintree • Greater Boston</span>
+</div>
+
+</a>
+
+
+<button
+class="menu-toggle"
+id="menuToggle"
+aria-label="Open navigation">
+☰
+</button>
+
+
+<nav class="main-nav" id="mainNav">
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#industries">Industries</a>
+<a href="#process">Process</a>
+<a href="#about">About</a>
+<a href="#faq">FAQ</a>
+
+<a href="#contact" class="nav-cta">
+Request a Quote
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container hero-inner">
+
+
+<div class="hero-content">
+
+<div class="location-pill">
+
+<span class="location-dot"></span>
+
+Serving Braintree & Greater Boston
+
+</div>
+
+
+<div class="eyebrow">
+Commercial Cleaning Specialists
+</div>
+
+
+<h1>
+Cleaner spaces.
+<br>
+<strong>Better <em>business.</em></strong>
+</h1>
+
+
+<p class="hero-text">
+Professional cleaning services designed for offices,
+commercial properties, contractors and restoration teams.
+24C helps businesses maintain cleaner, healthier and
+more presentable spaces without disrupting the workday.
+</p>
+
+
+<div class="hero-actions">
+
+<a href="#contact" class="btn btn-primary">
+Get a Free Quote →
+</a>
+
+<a href="#services" class="btn btn-light">
+Explore Our Services
+</a>
+
+</div>
+
+
+<div class="hero-proof">
+
+<div class="proof-item">
+
+<span class="proof-icon">✓</span>
+
+Professional Service
+
+</div>
+
+<div class="proof-item">
+
+<span class="proof-icon">✓</span>
+
+Flexible Scheduling
+
+</div>
+
+<div class="proof-item">
+
+<span class="proof-icon">✓</span>
+
+Business-Focused
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-visual">
+
+<div class="hero-image-frame">
+
+<img
+src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=85"
+alt="Professional commercial cleaning service"
+>
+
+</div>
+
+
+<div class="hero-floating top">
+
+<div class="float-icon">✓</div>
+
+<div>
+
+<div class="float-title">
+Professional Cleaning
+</div>
+
+<div class="float-sub">
+Built around your business
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-floating bottom">
+
+<strong>
+Your workplace,
+handled with care.
+</strong>
+
+<span>
+Office • Commercial • Post-Construction
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TRUST BAR
+===================================================== -->
+
+<section class="trust-bar">
+
+<div class="container trust-grid">
+
+<div class="trust-box">
+
+<div class="trust-number">
+24C
+</div>
+
+<div>
+<strong>Commercial Focus</strong>
+<span>Built for business environments</span>
+</div>
+
+</div>
+
+
+<div class="trust-box">
+
+<div class="trust-number">
+03
+</div>
+
+<div>
+<strong>Core Services</strong>
+<span>Cleaning solutions for your needs</span>
+</div>
+
+</div>
+
+
+<div class="trust-box">
+
+<div class="trust-number">
+MA
+</div>
+
+<div>
+<strong>Local Service</strong>
+<span>Braintree & Greater Boston</span>
+</div>
+
+</div>
+
+
+<div class="trust-box">
+
+<div class="trust-number">
+01
+</div>
+
+<div>
+<strong>Simple Goal</strong>
+<span>A cleaner, better workplace</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     VALUE
+===================================================== -->
+
+<section class="value-section" id="about">
+
+<div class="container">
+
+<div class="value-header">
+
+<div>
+
+<div class="eyebrow">
+Why 24C
+</div>
+
+<h2 class="section-title">
+Cleaning that works around your business.
+</h2>
+
+</div>
+
+
+<div class="value-header-right">
+
+<p>
+A commercial cleaning partner should do more than make a
+space look clean. The right service should be dependable,
+professional and easy to work with. 24C focuses on helping
+businesses maintain environments that are ready for
+employees, customers, tenants and clients.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="value-grid">
+
+<div class="value-card">
+
+<div class="value-number">
+01
+</div>
+
+<h3>Reliable Service</h3>
+
+<p>
+Consistent cleaning support that fits the needs of your
+property and your operating schedule.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-number">
+02
+</div>
+
+<h3>Professional Team</h3>
+
+<p>
+A professional approach to commercial cleaning with
+attention to the details that matter.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-number">
+03
+</div>
+
+<h3>Flexible Scheduling</h3>
+
+<p>
+Cleaning schedules designed to work around your business,
+staff, tenants and customers.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-number">
+04
+</div>
+
+<h3>Business Ready</h3>
+
+<p>
+Keep your workplace clean, organized and prepared for the
+people who use it every day.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services-section" id="services">
+
+<div class="container">
+
+<div class="section-heading-row">
+
+<div>
+
+<div class="eyebrow">
+What We Do
+</div>
+
+<h2 class="section-title">
+Commercial cleaning<br>
+for every stage.
+</h2>
+
+</div>
+
+
+<p class="section-description">
+From routine workplace cleaning to post-construction
+cleanup, 24C provides practical solutions for
+business properties throughout the area.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<article class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+alt="Office cleaning services"
+loading="lazy"
+>
+
+</div>
+
+<div class="service-body">
+
+<div class="service-meta">
+<span>01</span>
+<span>Routine Service</span>
+</div>
+
+<h3>Office Cleaning</h3>
+
+<p>
+Create a cleaner, more welcoming workplace with routine
+cleaning for offices, workspaces, meeting rooms,
+break rooms and common areas.
+</p>
+
+<a href="#contact" class="service-link">
+Discuss Office Cleaning →
+</a>
+
+</div>
+
+</article>
+
+
+<article class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=85"
+alt="Commercial office cleaning"
+loading="lazy"
+>
+
+</div>
+
+<div class="service-body">
+
+<div class="service-meta">
+<span>02</span>
+<span>Business Properties</span>
+</div>
+
+<h3>Commercial Cleaning</h3>
+
+<p>
+Professional cleaning for commercial environments,
+including offices, business facilities, properties and
+shared areas.
+</p>
+
+<a href="#contact" class="service-link">
+Discuss Commercial Cleaning →
+</a>
+
+</div>
+
+</article>
+
+
+<article class="service-card">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85"
+alt="Post construction cleaning"
+loading="lazy"
+>
+
+</div>
+
+<div class="service-body">
+
+<div class="service-meta">
+<span>03</span>
+<span>Final Cleanup</span>
+</div>
+
+<h3>Post-Construction</h3>
+
+<p>
+Help move a newly completed project toward handover
+with detailed cleanup of construction dust, debris and
+work areas.
+</p>
+
+<a href="#contact" class="service-link">
+Discuss Project Cleaning →
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURE
+===================================================== -->
+
+<section class="feature-section">
+
+<div class="container feature-grid">
+
+
+<div class="feature-image">
+
+<img
+src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85"
+alt="Clean professional office environment"
+loading="lazy"
+>
+
+<div class="feature-badge">
+
+<strong>Business-ready spaces</strong>
+
+<span>Clean • Organized • Professional</span>
+
+</div>
+
+</div>
+
+
+<div class="feature-content">
+
+<div class="eyebrow">
+More Than Cleaning
+</div>
+
+<h2>
+A clean workplace supports the way your business works.
+</h2>
+
+<p>
+Your property is part of your business. A well-maintained
+environment can create a better experience for employees,
+customers, visitors and tenants.
+</p>
+
+
+<div class="check-list">
+
+<div class="check-row">
+<i>✓</i>
+<span>Professional appearance for customers and visitors</span>
+</div>
+
+<div class="check-row">
+<i>✓</i>
+<span>Cleaner shared spaces and work environments</span>
+</div>
+
+<div class="check-row">
+<i>✓</i>
+<span>Cleaning schedules built around your operations</span>
+</div>
+
+<div class="check-row">
+<i>✓</i>
+<span>Detailed attention to high-use areas</span>
+</div>
+
+<div class="check-row">
+<i>✓</i>
+<span>Support for routine and project-based cleaning</span>
+</div>
+
+</div>
+
+
+<a href="#contact" class="btn btn-dark">
+Talk About Your Cleaning Needs →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     INDUSTRIES
+===================================================== -->
+
+<section class="industries-section" id="industries">
+
+<div class="container industry-grid">
+
+
+<div class="industry-image">
+
+<img
+src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
+alt="Modern commercial office environment"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="industry-content">
+
+<div class="eyebrow">
+Who We Serve
+</div>
+
+<h2>
+Built around the people responsible for the property.
+</h2>
+
+<p>
+Different properties have different demands. We work with
+the people who need dependable cleaning support and a
+straightforward service experience.
+</p>
+
+
+<div class="industry-grid-list">
+
+<div class="industry-item">
+
+<strong>Business Owners</strong>
+
+<span>Keep your workplace ready for employees and clients.</span>
+
+</div>
+
+
+<div class="industry-item">
+
+<strong>Property Managers</strong>
+
+<span>Maintain clean and presentable commercial properties.</span>
+
+</div>
+
+
+<div class="industry-item">
+
+<strong>Contractors</strong>
+
+<span>Prepare completed projects for final handover.</span>
+
+</div>
+
+
+<div class="industry-item">
+
+<strong>Restoration Companies</strong>
+
+<span>Support cleanup following restoration projects.</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STANDARDS
+===================================================== -->
+
+<section class="standards-section">
+
+<div class="container standards-layout">
+
+
+<div class="standards-content">
+
+<div class="eyebrow">
+Our Cleaning Approach
+</div>
+
+<h2>
+Attention to the areas that matter most.
+</h2>
+
+<p>
+Our cleaning approach focuses on the details people notice
+every day — from high-traffic areas and shared spaces to
+workstations, floors and presentation areas.
+</p>
+
+
+<div class="standard-list">
+
+<div class="standard-row">
+
+<b>01</b>
+
+<div>
+
+<h4>High-Traffic Areas</h4>
+
+<p>
+Entryways, hallways and frequently used areas receive focused attention.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="standard-row">
+
+<b>02</b>
+
+<div>
+
+<h4>Workspaces</h4>
+
+<p>
+Offices and work areas are maintained for a cleaner working environment.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="standard-row">
+
+<b>03</b>
+
+<div>
+
+<h4>Shared Areas</h4>
+
+<p>
+Common spaces, break rooms and frequently touched areas are part of the routine.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="standard-row">
+
+<b>04</b>
+
+<div>
+
+<h4>Presentation Areas</h4>
+
+<p>
+Customer-facing spaces receive the attention needed to maintain a professional appearance.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="standards-image">
+
+<img
+src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1100&q=85"
+alt="Professional cleaning equipment and supplies"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="process-section" id="process">
+
+<div class="container">
+
+<div class="section-heading-row">
+
+<div>
+
+<div class="eyebrow">
+Our Process
+</div>
+
+<h2 class="section-title">
+Simple from the<br>
+first conversation.
+</h2>
+
+</div>
+
+<p class="section-description">
+Getting cleaning support shouldn't be complicated.
+We keep the process clear so you know what happens next.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-card">
+
+<div class="process-number">
+01
+</div>
+
+<h3>
+Tell Us About Your Space
+</h3>
+
+<p>
+Tell us about your property, cleaning requirements,
+preferred schedule and any specific priorities.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+02
+</div>
+
+<h3>
+Build Your Cleaning Plan
+</h3>
+
+<p>
+We'll discuss the right service approach and determine
+what your business needs to maintain the space.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+03
+</div>
+
+<h3>
+Keep Your Space Ready
+</h3>
+
+<p>
+Our team provides the cleaning support needed to keep
+your business environment clean and presentable.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICE AREA
+===================================================== -->
+
+<section class="area-section">
+
+<div class="container">
+
+<div class="area-box">
+
+<div>
+
+<div class="eyebrow">
+Service Area
+</div>
+
+<h2>
+Serving businesses across Braintree & Greater Boston.
+</h2>
+
+<p>
+Looking for commercial cleaning near your property?
+Contact 24C to discuss your location and cleaning needs.
+</p>
+
+</div>
+
+
+<div class="area-list">
+
+<div class="area-item">
+<span>✓</span>
+Braintree
+</div>
+
+<div class="area-item">
+<span>✓</span>
+Greater Boston
+</div>
+
+<div class="area-item">
+<span>✓</span>
+Commercial Properties
+</div>
+
+<div class="area-item">
+<span>✓</span>
+Business Facilities
+</div>
+
+<div class="area-item">
+<span>✓</span>
+Construction Projects
+</div>
+
+<div class="area-item">
+<span>✓</span>
+Restoration Projects
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="faq-section" id="faq">
+
+<div class="container faq-layout">
+
+
+<div>
+
+<div class="eyebrow">
+Frequently Asked Questions
+</div>
+
+<h2 class="section-title">
+Have questions?
+Let's make it simple.
+</h2>
+
+<p class="section-description">
+Here are some common questions businesses ask when
+looking for commercial cleaning services.
+</p>
+
+</div>
+
+
+<div class="faq-list">
+
+
+<details class="faq">
+
+<summary>
+What types of businesses do you clean?
+</summary>
+
+<p>
+24C provides commercial cleaning solutions for offices,
+business properties, contractors, property managers and
+restoration companies.
+</p>
+
+</details>
+
+
+<details class="faq">
+
+<summary>
+Do you provide recurring cleaning?
+</summary>
+
+<p>
+Cleaning schedules can be structured around the needs and
+operations of your business. Contact us to discuss the
+frequency that works for your property.
+</p>
+
+</details>
+
+
+<details class="faq">
+
+<summary>
+Do you provide post-construction cleanup?
+</summary>
+
+<p>
+Yes. Post-construction cleaning is one of the core services,
+designed to help prepare newly completed spaces for owners,
+tenants and occupants.
+</p>
+
+</details>
+
+
+<details class="faq">
+
+<summary>
+Can cleaning be scheduled outside business hours?
+</summary>
+
+<p>
+Scheduling can be discussed based on your property,
+operating hours and cleaning requirements.
+</p>
+
+</details>
+
+
+<details class="faq">
+
+<summary>
+How do I request a quote?
+</summary>
+
+<p>
+Use the request-a-quote button on the website and provide
+your property details. The 24C team can then discuss your
+cleaning requirements and next steps.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section class="final-cta" id="contact">
+
+<div class="container">
+
+<div class="cta-box">
+
+<div>
+
+<div class="eyebrow">
+Request a Quote
+</div>
+
+<h2>
+Let's get your business looking its best.
+</h2>
+
+<p>
+Tell us about your property and cleaning needs.
+We'll help you determine the right next step.
+</p>
+
+</div>
+
+
+<div class="cta-actions">
+
+<a href="#" class="btn btn-primary">
+Request a Free Quote →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<h3>
+24C Commercial Cleaning
+</h3>
+
+<p>
+Professional commercial cleaning services for
+businesses, properties, contractors and restoration
+companies throughout Braintree and Greater Boston.
+</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>Services</h4>
+
+<a href="#services">Office Cleaning</a>
+<a href="#services">Commercial Cleaning</a>
+<a href="#services">Post-Construction</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>Company</h4>
+
+<a href="#about">About 24C</a>
+<a href="#industries">Who We Serve</a>
+<a href="#process">Our Process</a>
+<a href="#faq">FAQ</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>Contact</h4>
+
+<a href="#">Braintree, Massachusetts</a>
+<a href="#">Greater Boston Area</a>
+<a href="#contact">Request a Quote</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+© 2026 24C Commercial Cleaning. All Rights Reserved.
+</span>
+
+<span>
+Braintree • Greater Boston
+</span>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", () => {
+
+    mainNav.classList.toggle("active");
+
+});
+
+
+document.querySelectorAll(".main-nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mainNav.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>
